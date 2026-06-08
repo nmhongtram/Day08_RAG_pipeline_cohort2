@@ -12,6 +12,7 @@ Logic:
     5. Return top_k results
 """
 
+
 from .task5_semantic_search import semantic_search
 from .task6_lexical_search import lexical_search
 from .task7_reranking import rerank, rerank_rrf
@@ -61,32 +62,53 @@ def retrieve(
             'source': str  # 'hybrid' hoặc 'pageindex'
         }
     """
-    # TODO: Implement full retrieval pipeline
-    #
-    # Step 1: Song song chạy semantic + lexical
-    # dense_results = semantic_search(query, top_k=top_k * 2)
-    # sparse_results = lexical_search(query, top_k=top_k * 2)
-    #
-    # Step 2: Merge bằng RRF
-    # merged = rerank_rrf([dense_results, sparse_results], top_k=top_k * 2)
-    # for item in merged:
-    #     item["source"] = "hybrid"
-    #
-    # Step 3: Rerank
-    # if use_reranking and merged:
-    #     final_results = rerank(query, merged, top_k=top_k, method=RERANK_METHOD)
-    # else:
-    #     final_results = merged[:top_k]
-    #
-    # Step 4: Check threshold → fallback
-    # if not final_results or final_results[0]["score"] < score_threshold:
-    #     print(f"  ⚠ Hybrid score ({final_results[0]['score']:.3f} if final_results else 0}) "
-    #           f"< threshold ({score_threshold}). Fallback → PageIndex")
-    #     fallback = pageindex_search(query, top_k=top_k)
-    #     return fallback
-    #
-    # return final_results[:top_k]
-    raise NotImplementedError("Implement retrieve")
+    # ===== Step 1: Retrieve candidates =====
+    try:
+        dense_hits = semantic_search(query, top_k=top_k * 2)
+    except Exception as err:
+        print(f"  ⚠ Dense search failed: {err}")
+        dense_hits = []
+
+    try:
+        sparse_hits = lexical_search(query, top_k=top_k * 2)
+    except Exception as err:
+        print(f"  ⚠ Sparse search failed: {err}")
+        sparse_hits = []
+
+    # ===== Step 2: Fusion (RRF) =====
+    combined = rerank_rrf([dense_hits, sparse_hits], top_k=top_k * 2)
+
+    for doc in combined:
+        doc["source"] = "hybrid"
+
+    # ===== Step 3: Reranking =====
+    if use_reranking and combined:
+        try:
+            ranked = rerank(query, combined, top_k=top_k, method=RERANK_TYPE)
+        except Exception as err:
+            print(f"  ⚠ Rerank failed: {err}")
+            ranked = combined[:top_k]
+    else:
+        ranked = combined[:top_k]
+
+    for doc in ranked:
+        doc.setdefault("source", "hybrid")
+
+    # ===== Step 4: Fallback nếu score thấp =====
+    if not ranked or ranked[0]["score"] < score_threshold:
+        current_score = ranked[0]["score"] if ranked else 0.0
+        print(f"  ⚠ Low score ({current_score:.3f}) → switching to PageIndex")
+
+        try:
+            alt_results = pageindex_search(query, top_k=top_k)
+            if alt_results:
+                return alt_results[:top_k]
+        except Exception as err:
+            print(f"  ⚠ PageIndex error: {err}")
+
+    # ===== Step 5: Return final =====
+    return ranked[:top_k]
+
 
 
 if __name__ == "__main__":
