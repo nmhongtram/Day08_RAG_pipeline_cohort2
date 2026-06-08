@@ -1,0 +1,178 @@
+---
+title: "Loạt ca sĩ 'dính' chất cấm, ma túy phá hủy não bộ người trẻ ra sao?"
+source_url: https://vietnamnet.vn/loat-ca-si-dinh-chat-cam-ma-tuy-pha-huy-nao-bo-nguoi-tre-ra-sao-2518285.html
+date_crawled: 2026-06-08T16:01:39.890908
+source_type: news_article
+---
+
+# Loạt ca sĩ 'dính' chất cấm, ma túy phá hủy não bộ người trẻ ra sao?
+
+**Nguồn:** [https://vietnamnet.vn/loat-ca-si-dinh-chat-cam-ma-tuy-pha-huy-nao-bo-nguoi-tre-ra-sao-2518285.html](https://vietnamnet.vn/loat-ca-si-dinh-chat-cam-ma-tuy-pha-huy-nao-bo-nguoi-tre-ra-sao-2518285.html)  
+**Ngày crawl:** 2026-06-08T16:01:39.890908
+
+---
+
+Thứ hai, 08/06/2026  [ Xem lịch vạn niên ](https://vietnamnet.vn/lich-van-nien)
+[ ![vads-Quảng cáo truyền thông](https://img.vietnamnetad.vn/Images/logo/vads-logo-v3.png) ](https://vads.vn)
+![icon](https://static.vnncdn.net/v1/icon/chat.svg) Aa
+![share facebook](https://static.vnncdn.net/v1/icon/icon-share-link-facebook.svg) Facebook  ![share zalo](https://static.vnncdn.net/v1/icon/zalo-unactive-mobile%20.svg) Zalo  ![share email](https://static.vnncdn.net/v1/icon/icon-share-link-email.svg) Email  ![](https://static.vnncdn.net/v1/icon/icon-link-share-copy-link.svg) Sao chép liên kết
+Aa Aa
+[ ![VietNamNet](https://static.vnncdn.net/v1/logo/logoVietnamNet.svg) ](https://vietnamnet.vn/ "Vietnamnet")
+  * [ ![icon](https://static.vnncdn.net/v1/icon/home_mobile.svg) ](https://vietnamnet.vn/)
+  * [ Sức khỏe ](https://vietnamnet.vn/suc-khoe "Sức khỏe")
+    * [ Chính trị ](https://vietnamnet.vn/chinh-tri "Chính trị")
+    * [ Thời sự ](https://vietnamnet.vn/thoi-su "Thời sự")
+    * [ Kinh doanh ](https://vietnamnet.vn/kinh-doanh "Kinh doanh")
+    * [ Dân tộc và Tôn giáo ](https://vietnamnet.vn/dan-toc-ton-giao "Dân tộc và Tôn giáo")
+    * [ Giáo dục ](https://vietnamnet.vn/giao-duc "Giáo dục")
+    * [ Thế giới ](https://vietnamnet.vn/the-gioi "Thế giới")
+    * [ Thể thao ](https://vietnamnet.vn/the-thao "Thể thao")
+    * [ Văn hóa - Giải trí ](https://vietnamnet.vn/van-hoa-giai-tri "Văn hóa - Giải trí")
+    * [ Đời sống ](https://vietnamnet.vn/doi-song "Đời sống")
+    * [ Sức khỏe ](https://vietnamnet.vn/suc-khoe "Sức khỏe")
+    * [ Công nghệ ](https://vietnamnet.vn/cong-nghe "Công nghệ")
+    * [ Xe ](https://vietnamnet.vn/oto-xe-may "Xe")
+    * [ Bất động sản ](https://vietnamnet.vn/bat-dong-san "Bất động sản")
+    * [ Du lịch ](https://vietnamnet.vn/du-lich "Du lịch")
+    * [ Bạn đọc ](https://vietnamnet.vn/ban-doc "Bạn đọc")
+  * [ Tin tức ](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+
+
+Thứ Sáu, 22/05/2026 - 14:58 
+# Loạt ca sĩ 'dính' chất cấm, ma túy phá hủy não bộ người trẻ ra sao?
+[ ](https://vietnamnet.vn/tac-gia/n-huyen-00092K.html "N. Huyền ")
+[ N. Huyền ](https://vietnamnet.vn/tac-gia/n-huyen-00092K.html "N. Huyền ")
+![](https://static.vnncdn.net/v1/icon/right-arrow-blue.svg) [Xem các bài viết của tác giả](https://vietnamnet.vn/tac-gia/n-huyen-00092K.html)
+[ ](javasctip:void\(0\); "Chia sẻ bài viết lên facebook") [ ](javasctip:void\(0\); "Chia sẻ bài viết lên zalo") [ ](javasctip:void\(0\); "Chia sẻ bài viết lên email") [ Sao chép liên kết ](javasctip:void\(0\); "Sao chép liên kết") [ ](javasctip:void\(0\); "Lưu bài viết") [ ](https://vietnamnet.vn/loat-ca-si-dinh-chat-cam-ma-tuy-pha-huy-nao-bo-nguoi-tre-ra-sao-2518285.html#comment_count "Comment")
+22/05/2026 14:58 (GMT+07:00)
+[ ![icon](https://static.vnncdn.net/v1/icon/google-news.svg) ](https://news.google.com/publications/CAAqBwgKMNi4kgswo_-nAw/sections/CAQqEAgAKgcICjDYuJILMKP_pwMw7pCTBw?ceid=VN:vi&oc=3&hl=vi&gl=VN)
+## Ban đầu, người dùng ma túy có thể cảm thấy nhiều năng lượng, giảm lo âu nhưng sau đó não bộ bắt đầu suy kiệt.
+Không chỉ các ca sĩ [Miu Lê](https://vietnamnet.vn/khoi-to-bat-tam-giam-ca-si-miu-le-2516487.html "Miu Lê"), Long Nhật, Sơn Ngọc Minh "dính" vào chất cấm, lực lượng chức năng mới đây tiếp tục bắt giữ 140 người liên quan đến ma túy, trong số này không ít người trẻ. 
+Trao đổi với _PV VietNamNet_ , TS.BS Trần Thị Hồng Thu, nguyên Phó giám đốc Bệnh viện Tâm thần ban ngày Mai Hương (Hà Nội) bày tỏ lo ngại mức độ tàn phá của ma túy đối với sức khỏe tâm thần của người sử dụng, đặc biệt là giới trẻ.
+“Nhiều người trẻ hiện nay không còn nhìn ma túy như một chất có khả năng phá hủy não bộ và cuộc đời. Thay vào đó, một bộ phận xem việc sử dụng ma túy như trải nghiệm, một cách giải trí, giải tỏa áp lực hoặc thậm chí là biểu hiện của sự sành điệu, tự do cá nhân. Đây là điều cực kỳ nguy hiểm”, Tiến sĩ Thu nói.
+Trong hơn 35 năm làm việc trong lĩnh vực sức khỏe tâm thần, bà Thu từng gặp rất nhiều trường hợp ban đầu chỉ “thử cho biết”, “dùng một lần”, “dùng cuối tuần” nhưng sau đó dần rơi vào vòng xoáy lệ thuộc. 
+“Điều đau lòng là nhiều người trong số đó từng là học sinh giỏi, sinh viên xuất sắc, người có tài năng nghệ thuật, doanh nhân trẻ hoặc có tương lai rất rộng mở”, Tiến sĩ Thu thông tin.
+**Phá hủy hệ thống điều khiển cảm xúc**
+Theo các chuyên gia, ma túy không chỉ gây nghiện. Tác động nguy hiểm nhất của ma túy là phá hủy hệ thống điều khiển cảm xúc, hành vi và khả năng tự chủ của não bộ. Khi một người sử dụng các chất gây nghiện, đặc biệt là ma túy tổng hợp, hệ dopamine trong não bị kích thích quá mức.
+![2aoboqwple7nklgpej8nt0lkm2fxwqd0n02vpicu 2003.jpg](https://vietnamnet.vn/loat-ca-si-dinh-chat-cam-ma-tuy-pha-huy-nao-bo-nguoi-tre-ra-sao-2518285.html) _Ca sĩ Miu Lê (hàng trên, ở giữa) và các đối tượng liên quan đến ma túy. Ảnh: HB_
+“Ma túy thường không phá hủy một con người ngay lập tức mà từng chút một, âm thầm. Ban đầu, người dùng có thể cảm thấy hưng phấn, tự tin, nhiều năng lượng, giảm lo âu hoặc cảm giác 'thoát khỏi thực tại'. Nhưng sau đó, não bộ bắt đầu suy kiệt. Họ dần mất khả năng cảm nhận niềm vui tự nhiên, không còn thấy hạnh phúc với những điều bình thường như gia đình, công việc, học tập hay các mối quan hệ.
+Rất nhiều trường hợp xuất hiện mất ngủ kéo dài, lo âu, trầm cảm, hoảng loạn, cáu gắt, bùng nổ cảm xúc, giảm trí nhớ, giảm khả năng tập trung. Nặng hơn, họ có thể xuất hiện hoang tưởng, ảo giác, nghi ngờ bị theo dõi hoặc rơi vào trạng thái loạn thần”, Tiến sĩ Thu phân tích.
+Điều khiến vị bác sĩ cảm thấy trăn trở là hiện nay nhiều loại ma túy được ngụy trang dưới những cái tên tưởng chừng “vô hại” như kẹo, nước vui, bóng cười, pod, cần sa giải trí… khiến giới trẻ mất cảnh giác.
+Theo nhiều nghiên cứu quốc tế, đặc biệt từ Tổ chức Y tế Thế giới (WHO) và Viện nghiên cứu Quốc gia về Lạm dụng ma túy (Mỹ), việc sử dụng ma túy ở tuổi vị thành niên và thanh niên làm tăng đáng kể nguy cơ rối loạn tâm thần, suy giảm nhận thức, hành vi bạo lực và nguy cơ tự sát. 
+Điều đáng lo ngại, nhiều phụ huynh phát hiện con nghiện ma túy quá muộn vì nghĩ con đang “tuổi nổi loạn”, áp lực học hành hoặc thay đổi tâm lý thông thường.
+Các chuyên gia lưu ý nếu một người trẻ mất ngủ kéo dài, thay đổi bạn bè đột ngột, học tập sa sút, cảm xúc thất thường, cô lập bản thân, cáu gắt vô cớ hoặc có biểu hiện bất thường, gia đình cần đặc biệt lưu ý khả năng liên quan đến chất gây nghiện.
+[](https://vietnamnet.vn/uong-nham-thuoc-cai-nghien-ma-tuy-be-trai-7-tuoi-kho-tho-nguy-kich-2082946.html "Uống nhầm thuốc cai nghiện ma túy, bé trai 7 tuổi khó thở, nguy kịch")
+[Uống nhầm thuốc cai nghiện ma túy, bé trai 7 tuổi khó thở, nguy kịch](https://vietnamnet.vn/uong-nham-thuoc-cai-nghien-ma-tuy-be-trai-7-tuoi-kho-tho-nguy-kich-2082946.html "Uống nhầm thuốc cai nghiện ma túy, bé trai 7 tuổi khó thở, nguy kịch")
+Tưởng thuốc của người cậu mang về để cai nghiện là nước ngọt, bé trai 7 tuổi đã lấy uống và xuất hiện tình trạng khó thở, lơ mơ.
+[](https://vietnamnet.vn/thieu-nien-ha-noi-hon-me-do-uong-nham-chat-cai-nghien-ma-tuy-729633.html "Thiếu niên Hà Nội hôn mê do uống nhầm chất cai nghiện ma túy")
+[Thiếu niên Hà Nội hôn mê do uống nhầm chất cai nghiện ma túy](https://vietnamnet.vn/thieu-nien-ha-noi-hon-me-do-uong-nham-chat-cai-nghien-ma-tuy-729633.html "Thiếu niên Hà Nội hôn mê do uống nhầm chất cai nghiện ma túy")
+Cháu Đ. thấy cốc nước màu hồng trong tủ lạnh nên lấy uống giải khát. Vài tiếng sau, cháu rơi vào hôn mê, khó thở.
+[ ![vads-Quảng cáo truyền thông](https://img.vietnamnetad.vn/Images/logo/vads-logo-v3.png) ](https://vads.vn)
+[ ![vads-Quảng cáo truyền thông](https://img.vietnamnetad.vn/Images/logo/vads-logo-v3.png) ](https://vads.vn)
+##  Tra cứu các bệnh 
+  * ###  [ Chưa có vắc xin, thuốc điều trị đặc hiệu chủng mới dịch Ebola, Bộ Y tế họp khẩn ](https://vietnamnet.vn/chua-co-vac-xin-thuoc-dieu-tri-dac-hieu-chung-moi-dich-ebola-bo-y-te-hop-khan-2518216.html "Chưa có vắc xin, thuốc điều trị đặc hiệu chủng mới dịch Ebola, Bộ Y tế họp khẩn")
+  * ###  [ Hoa, quả thanh long được dùng làm món ăn, vị thuốc ](https://vietnamnet.vn/hoa-qua-thanh-long-duoc-dung-lam-mon-an-vi-thuoc-2516640.html "Hoa, quả thanh long được dùng làm món ăn, vị thuốc")
+  * ###  [ Bộ Y tế đề xuất cấm người sinh từ năm 2010 mua, sử dụng thuốc lá ](https://vietnamnet.vn/bo-y-te-de-xuat-cam-nguoi-sinh-tu-nam-2010-tro-ve-sau-mua-su-dung-thuoc-la-2518279.html "Bộ Y tế đề xuất cấm người sinh từ năm 2010 mua, sử dụng thuốc lá")
+
+
+Bình luận  ![](https://static.vnncdn.net/v1/icon/chat\(1\).svg)
+[ ](javasctip:void\(0\); "Chia sẻ bài viết lên facebook") [ ](javasctip:void\(0\); "Chia sẻ bài viết lên zalo") [ ](javasctip:void\(0\); "Chia sẻ bài viết lên email") [ Sao chép liên kết ](javasctip:void\(0\); "Sao chép liên kết") [ ](javasctip:void\(0\); "Lưu bài viết")
+  * Xem thêm về:
+  * ###  [ Ma túy ](https://vietnamnet.vn/ma-tuy-tag931304948423143614.html "Ma túy")
+  * ###  [ cai nghiện ma túy ](https://vietnamnet.vn/cai-nghien-ma-tuy-tag11100229018797373984.html "cai nghiện ma túy")
+
+
+##  Tin cùng chuyên mục 
+[ ](https://vietnamnet.vn/hieu-truong-vinuni-lang-dai-hoc-o-ha-long-giup-san-sinh-nhung-ky-lan-cong-nghe-2523763.html "Bệnh viện FV: Robot da Vinci giúp cắt u phổi 11mm ‘êm ái’ cho bệnh nhân 68 tuổi")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Bệnh viện FV: Robot da Vinci giúp cắt u phổi 11mm ‘êm ái’ cho bệnh nhân 68 tuổi ](https://vietnamnet.vn/hieu-truong-vinuni-lang-dai-hoc-o-ha-long-giup-san-sinh-nhung-ky-lan-cong-nghe-2523763.html "Bệnh viện FV: Robot da Vinci giúp cắt u phổi 11mm ‘êm ái’ cho bệnh nhân 68 tuổi")
+Robot da Vinci Xi tích hợp công nghệ huỳnh quang ICG hiển thị rõ ranh giới phân thùy ngay trong lúc mổ, giúp các bác sĩ Bệnh viện FV triệt cắt thành công khối u phổi 11mm cho nữ bệnh nhân 68 tuổi, bảo tồn gần 90% mô phổi lành. 
+[ ](https://vietnamnet.vn/mon-an-nhieu-nguoi-thich-nhung-co-the-khien-nhieu-nguoi-cap-cuu-trong-vai-gio-2523525.html "Món ăn được săn lùng có thể khiến nhiều người cấp cứu trong vài giờ")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Món ăn được săn lùng có thể khiến nhiều người cấp cứu trong vài giờ ](https://vietnamnet.vn/mon-an-nhieu-nguoi-thich-nhung-co-the-khien-nhieu-nguoi-cap-cuu-trong-vai-gio-2523525.html "Món ăn được săn lùng có thể khiến nhiều người cấp cứu trong vài giờ")
+Khoảng 30 phút sau khi ăn tằm, một phụ nữ 44 tuổi phải nhập viện cấp cứu. Các bác sĩ khuyến cáo món ăn khoái khẩu của nhiều người có thể trở thành tác nhân gây dị ứng nguy hiểm. 
+[ ](https://vietnamnet.vn/tu-ngay-1-7-bhyt-chi-tra-kham-ngoai-tru-trai-tuyen-vuot-cap-ra-sao-2523689.html "Từ ngày 1/7, BHYT chi trả khám ngoại trú trái tuyến, vượt cấp ra sao?")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Từ ngày 1/7, BHYT chi trả khám ngoại trú trái tuyến, vượt cấp ra sao? ](https://vietnamnet.vn/tu-ngay-1-7-bhyt-chi-tra-kham-ngoai-tru-trai-tuyen-vuot-cap-ra-sao-2523689.html "Từ ngày 1/7, BHYT chi trả khám ngoại trú trái tuyến, vượt cấp ra sao?")
+Từ ngày 1/7, quyền lợi của người dân có thẻ BHYT khi đi khám chữa bệnh ngoại trú trái tuyến, vượt cấp có sự thay đổi lớn. 
+[ ](https://vietnamnet.vn/nhung-bo-phan-cua-bo-du-thich-den-may-cung-khong-nen-an-nhieu-2523211.html "Những bộ phận của bò dù thích đến mấy cũng không nên ăn nhiều")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Những bộ phận của bò dù thích đến mấy cũng không nên ăn nhiều ](https://vietnamnet.vn/nhung-bo-phan-cua-bo-du-thich-den-may-cung-khong-nen-an-nhieu-2523211.html "Những bộ phận của bò dù thích đến mấy cũng không nên ăn nhiều")
+Thịt bò chứa nhiều đạm, sắt và các chất dinh dưỡng có lợi cho sức khỏe nhưng thực phẩm này không được khuyến nghị với một số nhóm người. 
+[ ](https://vietnamnet.vn/bac-si-va-nghin-le-tinh-huong-kho-noi-chung-toi-da-co-het-suc-2517687.html "Bác sĩ và nghìn lẻ tình huống khó nói: 'Chúng tôi đã cố hết sức'")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Bác sĩ và nghìn lẻ tình huống khó nói: 'Chúng tôi đã cố hết sức' ](https://vietnamnet.vn/bac-si-va-nghin-le-tinh-huong-kho-noi-chung-toi-da-co-het-suc-2517687.html "Bác sĩ và nghìn lẻ tình huống khó nói: 'Chúng tôi đã cố hết sức'") [ ![icon binh luan](https://static.vnncdn.net/v1/icon/binh-luan.svg) 10 ](https://vietnamnet.vn/bac-si-va-nghin-le-tinh-huong-kho-noi-chung-toi-da-co-het-suc-2517687.html#comment)
+Tại các phòng cấp cứu, những công việc khó khăn với đội ngũ y bác sĩ không phải chỉ là chuyện chạy đua với thời gian để giành lại sự sống cho người bệnh, mà đôi khi việc khó lại là khoảnh khắc phải đối diện với người nhà bệnh nhân để báo tin xấu. 
+[ ](https://vietnamnet.vn/3-moi-nguy-tu-mon-an-vat-nem-chua-ran-duoc-nhieu-nguoi-yeu-thich-2523511.html "3 mối nguy từ món ăn vặt được nhiều người yêu thích")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ 3 mối nguy từ món ăn vặt được nhiều người yêu thích ](https://vietnamnet.vn/3-moi-nguy-tu-mon-an-vat-nem-chua-ran-duoc-nhieu-nguoi-yeu-thich-2523511.html "3 mối nguy từ món ăn vặt được nhiều người yêu thích")
+Nem chua rán là món ăn vặt phổ biến ở một số tỉnh thành nhưng các chuyên gia cảnh báo đây là cũng là thực phẩm có nhiều nguy cơ cho sức khỏe. 
+[ ](https://vietnamnet.vn/tien-si-canh-bao-thoi-quen-nguy-hiem-cua-50-so-nguoi-tang-huyet-ap-2523489.html "Tiến sĩ cảnh báo thói quen nguy hiểm của 50% số người tăng huyết áp")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Tiến sĩ cảnh báo thói quen nguy hiểm của 50% số người tăng huyết áp ](https://vietnamnet.vn/tien-si-canh-bao-thoi-quen-nguy-hiem-cua-50-so-nguoi-tang-huyet-ap-2523489.html "Tiến sĩ cảnh báo thói quen nguy hiểm của 50% số người tăng huyết áp")
+Chỉ uống thuốc huyết áp khi xuất hiện triệu chứng đau đầu, nóng bừng mặt, ông H. không ngờ rằng có ngày mình chạm ngõ tử thần. 
+[ ](https://vietnamnet.vn/tre-em-hien-nay-can-thi-nhieu-hon-thoi-bo-me-dau-la-nguyen-nhan-2523466.html "Trẻ em hiện nay cận thị nhiều hơn thời bố mẹ, đâu là nguyên nhân?")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Trẻ em hiện nay cận thị nhiều hơn thời bố mẹ, đâu là nguyên nhân? ](https://vietnamnet.vn/tre-em-hien-nay-can-thi-nhieu-hon-thoi-bo-me-dau-la-nguyen-nhan-2523466.html "Trẻ em hiện nay cận thị nhiều hơn thời bố mẹ, đâu là nguyên nhân?")
+Nguyên nhân tình trạng cận thị trở nên phổ biến không chỉ ở ánh sáng đèn học mà chủ yếu do trẻ ít vận động ngoài trời, dành quá nhiều thời gian cho màn hình điện tử và các hoạt động nhìn gần. 
+[ ](https://vietnamnet.vn/nguoi-dan-ong-dot-quyh-sau-tran-tennis-vi-2-thoi-quen-dan-ong-viet-gap-phai-2523459.html "Sai lầm khiến người đàn ông nhồi máu cơ tim sau trận tennis")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Sai lầm khiến người đàn ông nhồi máu cơ tim sau trận tennis ](https://vietnamnet.vn/nguoi-dan-ong-dot-quyh-sau-tran-tennis-vi-2-thoi-quen-dan-ong-viet-gap-phai-2523459.html "Sai lầm khiến người đàn ông nhồi máu cơ tim sau trận tennis")
+Từng tin rằng tập thể dục đều đặn và sử dụng thực phẩm chức năng có thể thay thế thuốc điều trị, người đàn ông 43 tuổi phải đi cấp cứu vì nhồi máu cơ tim sau một trận tennis. 
+[ ](https://vietnamnet.vn/bac-si-canh-bao-moi-nguy-tu-nhung-coc-muc-nhay-song-gion-san-sat-2523375.html "Bác sĩ cảnh báo mối nguy từ những cốc ‘mực nhảy sống’ giòn sần sật")
+[Tin tức](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+###  [ Bác sĩ cảnh báo mối nguy từ những cốc ‘mực nhảy sống’ giòn sần sật ](https://vietnamnet.vn/bac-si-canh-bao-moi-nguy-tu-nhung-coc-muc-nhay-song-gion-san-sat-2523375.html "Bác sĩ cảnh báo mối nguy từ những cốc ‘mực nhảy sống’ giòn sần sật")
+Được quảng cáo là món ăn tươi ngon, mực nhảy sống nhúng gia vị chua cay tiềm ẩn nhiều nguy hiểm cho sức khỏe, thậm chí đe dọa đến tính mạng người dùng. 
+Xem thêm tin ![icon loading](https://static.vnncdn.net/v1/icon/infonet/loading.svg)
+##  Tin mới 
+[ ](https://vietnamnet.vn/cach-gia-lai-giai-bai-toan-tai-san-cong-doi-du-sau-sap-nhap-2523858.html "Cách Gia Lai giải ‘bài toán’ tài sản công dôi dư sau sáp nhập")
+[Đầu tư](https://vietnamnet.vn/kinh-doanh/dau-tu "Đầu tư")
+###  [ Cách Gia Lai giải ‘bài toán’ tài sản công dôi dư sau sáp nhập ](https://vietnamnet.vn/cach-gia-lai-giai-bai-toan-tai-san-cong-doi-du-sau-sap-nhap-2523858.html "Cách Gia Lai giải ‘bài toán’ tài sản công dôi dư sau sáp nhập")
+Sau 1 năm vận hành mô hình chính quyền địa phương 2 cấp, hàng trăm cơ sở nhà, đất ở Gia Lai được đưa vào sử dụng, góp phần hạn chế lãng phí, tiết kiệm ngân sách và tạo thêm nguồn lực phục vụ phát triển kinh tế - xã hội. 
+[ ](https://vietnamnet.vn/thang-6-tkv-phan-dau-cung-cap-4-13-trieu-tan-than-cho-san-xuat-dien-2523868.html "Tháng 6, TKV phấn đấu cung cấp 4,13 triệu tấn than cho sản xuất điện")
+[Thị trường](https://vietnamnet.vn/kinh-doanh/thi-truong "Thị trường")
+###  [ Tháng 6, TKV phấn đấu cung cấp 4,13 triệu tấn than cho sản xuất điện ](https://vietnamnet.vn/thang-6-tkv-phan-dau-cung-cap-4-13-trieu-tan-than-cho-san-xuat-dien-2523868.html "Tháng 6, TKV phấn đấu cung cấp 4,13 triệu tấn than cho sản xuất điện")
+Các đơn vị thành viên của TKV phấn đấu sản xuất 3,13 triệu tấn than nguyên khai; 3,3 triệu tấn than sạch; 127 nghìn tấn Alumina; tiêu thụ dự kiến 115,1 nghìn tấn. 
+[ ](https://vietnamnet.vn/truong-dai-hoc-xay-dung-ha-noi-thanh-lap-phan-hieu-tai-tphcm-2523865.html "Trường Đại học Xây dựng Hà Nội thành lập phân hiệu tại TPHCM")
+[Nhà trường](https://vietnamnet.vn/giao-duc/nha-truong "Nhà trường")
+###  [ Trường Đại học Xây dựng Hà Nội thành lập phân hiệu tại TPHCM ](https://vietnamnet.vn/truong-dai-hoc-xay-dung-ha-noi-thanh-lap-phan-hieu-tai-tphcm-2523865.html "Trường Đại học Xây dựng Hà Nội thành lập phân hiệu tại TPHCM")
+Ngày 8/6, Bộ trưởng Bộ Giáo dục và Đào tạo đã ký quyết định thành lập Phân hiệu Trường Đại học Xây dựng Hà Nội tại TP.HCM. 
+[ ](https://vietnamnet.vn/cay-da-khong-lo-cao-20m-che-bong-mat-cho-ca-nghin-nguoi-2523804.html "Cây đa khổng lồ cao 20m, che bóng mát cho cả nghìn người")
+[Chuyện lạ](https://vietnamnet.vn/doi-song/chuyen-la "Chuyện lạ")
+###  [ Cây đa khổng lồ cao 20m, che bóng mát cho cả nghìn người ](https://vietnamnet.vn/cay-da-khong-lo-cao-20m-che-bong-mat-cho-ca-nghin-nguoi-2523804.html "Cây đa khổng lồ cao 20m, che bóng mát cho cả nghìn người")
+TRUNG QUỐC - Cây đa cổ thụ tuổi đời gần 1.000 năm, tán trải rộng, che bóng mát cho cả nghìn người trú ẩn dưới tán lá của nó. 
+[ ](https://vietnamnet.vn/thay-co-nau-chao-nong-tang-but-chi-dong-vien-hoc-tro-thi-tot-nghiep-thpt-2523860.html "Thầy cô nấu cháo nóng, tặng bút chì động viên học trò thi tốt nghiệp THPT")
+[Tuyển sinh ](https://vietnamnet.vn/giao-duc/tuyen-sinh "Tuyển sinh ")
+###  [ Thầy cô nấu cháo nóng, tặng bút chì động viên học trò thi tốt nghiệp THPT ](https://vietnamnet.vn/thay-co-nau-chao-nong-tang-but-chi-dong-vien-hoc-tro-thi-tot-nghiep-thpt-2523860.html "Thầy cô nấu cháo nóng, tặng bút chì động viên học trò thi tốt nghiệp THPT")
+Để động viên học trò trước thềm kỳ thi tốt nghiệp THPT, các thầy cô giáo ở Hà Nội đã chuẩn bị những món quà nhỏ nhằm tiếp sức, giúp các sĩ tử lớp 12 thêm tự tin chinh phục kỳ thi quan trọng. 
+Xem thêm tin ![icon loading](https://static.vnncdn.net/v1/icon/infonet/loading.svg)
+##  [ Làm đẹp ](https://vietnamnet.vn/suc-khoe/lam-dep "Làm đẹp")
+[ ](https://vietnamnet.vn/phat-147-trieu-dong-thu-hoi-8-loai-kem-duong-dau-goi-han-quoc-ban-tai-viet-nam-2522316.html "Phạt 147 triệu đồng, thu hồi 8 loại kem dưỡng, dầu gội Hàn Quốc bán tại Việt Nam")
+###  [ Phạt 147 triệu đồng, thu hồi 8 loại kem dưỡng, dầu gội Hàn Quốc bán tại Việt Nam ](https://vietnamnet.vn/phat-147-trieu-dong-thu-hoi-8-loai-kem-duong-dau-goi-han-quoc-ban-tai-viet-nam-2522316.html "Phạt 147 triệu đồng, thu hồi 8 loại kem dưỡng, dầu gội Hàn Quốc bán tại Việt Nam")
+Hai loại kem dưỡng da, dưỡng mắt của thương hiệu Skinfood cùng nhiều loại tinh chất chăm sóc da, dầu gội đầu, mặt nạ nhập khẩu từ Hàn Quốc khác vừa bị Bộ Y tế yêu cầu thu hồi. 
+###  [ Dòng chữ trên lọ kem chống nắng cần lưu tâm ngoài chỉ số SPF nếu muốn bảo vệ da ](https://vietnamnet.vn/dong-chu-tren-lo-kem-chong-nang-can-luu-tam-ngoai-chi-so-spf-2516943.html "Dòng chữ trên lọ kem chống nắng cần lưu tâm ngoài chỉ số SPF nếu muốn bảo vệ da")
+###  [ Người phụ nữ đột ngột ngừng tim khi đang chờ khám vì khàn tiếng ](https://vietnamnet.vn/nguoi-phu-nu-dot-ngot-ngung-tim-khi-dang-cho-kham-vi-khan-tieng-2484736.html "Người phụ nữ đột ngột ngừng tim khi đang chờ khám vì khàn tiếng")
+###  [ Vì sao tim đập nhanh, tăng huyết áp sau uống cà phê? ](https://vietnamnet.vn/vi-sao-tim-dap-nhanh-tang-huyet-ap-sau-uong-ca-phe-2466164.html "Vì sao tim đập nhanh, tăng huyết áp sau uống cà phê?")
+##  [ Tư vấn sức khỏe ](https://vietnamnet.vn/suc-khoe/tu-van-suc-khoe "Tư vấn sức khỏe")
+[ ](https://vietnamnet.vn/nhung-bo-phan-cua-bo-du-thich-den-may-cung-khong-nen-an-nhieu-2523211.html "Những bộ phận của bò dù thích đến mấy cũng không nên ăn nhiều")
+###  [ Những bộ phận của bò dù thích đến mấy cũng không nên ăn nhiều ](https://vietnamnet.vn/nhung-bo-phan-cua-bo-du-thich-den-may-cung-khong-nen-an-nhieu-2523211.html "Những bộ phận của bò dù thích đến mấy cũng không nên ăn nhiều")
+Thịt bò chứa nhiều đạm, sắt và các chất dinh dưỡng có lợi cho sức khỏe nhưng thực phẩm này không được khuyến nghị với một số nhóm người. 
+###  [ Loại lá trị mẩn ngứa, rôm sảy mùa hè ](https://vietnamnet.vn/man-ngua-rom-say-mua-he-chi-can-nam-la-nay-nau-nuoc-tam-la-diu-ngay-2523247.html "Loại lá trị mẩn ngứa, rôm sảy mùa hè")
+###  [ Uống nước rau má rất tốt nhưng đại kỵ với 3 nhóm người ](https://vietnamnet.vn/uong-nuoc-rau-ma-rat-tot-nhung-dai-ky-voi-3-nhom-nguoi-2523297.html "Uống nước rau má rất tốt nhưng đại kỵ với 3 nhóm người")
+###  [ Người đàn ông xuất hiện triệu chứng bất thường sau khi ăn cơm rang ](https://vietnamnet.vn/nguoi-dan-ong-xuat-hien-trieu-chung-bat-thuong-sau-khi-an-com-rang-2522186.html "Người đàn ông xuất hiện triệu chứng bất thường sau khi ăn cơm rang")
+##  [ Tin tức ](https://vietnamnet.vn/suc-khoe/suc-khoe-24h "Tin tức")
+[ ](https://vietnamnet.vn/mon-an-nhieu-nguoi-thich-nhung-co-the-khien-nhieu-nguoi-cap-cuu-trong-vai-gio-2523525.html "Món ăn được săn lùng có thể khiến nhiều người cấp cứu trong vài giờ")
+###  [ Món ăn được săn lùng có thể khiến nhiều người cấp cứu trong vài giờ ](https://vietnamnet.vn/mon-an-nhieu-nguoi-thich-nhung-co-the-khien-nhieu-nguoi-cap-cuu-trong-vai-gio-2523525.html "Món ăn được săn lùng có thể khiến nhiều người cấp cứu trong vài giờ")
+Khoảng 30 phút sau khi ăn tằm, một phụ nữ 44 tuổi phải nhập viện cấp cứu. Các bác sĩ khuyến cáo món ăn khoái khẩu của nhiều người có thể trở thành tác nhân gây dị ứng nguy hiểm. 
+###  [ Từ ngày 1/7, BHYT chi trả khám ngoại trú trái tuyến, vượt cấp ra sao? ](https://vietnamnet.vn/tu-ngay-1-7-bhyt-chi-tra-kham-ngoai-tru-trai-tuyen-vuot-cap-ra-sao-2523689.html "Từ ngày 1/7, BHYT chi trả khám ngoại trú trái tuyến, vượt cấp ra sao?")
+###  [ Những bộ phận của bò dù thích đến mấy cũng không nên ăn nhiều ](https://vietnamnet.vn/nhung-bo-phan-cua-bo-du-thich-den-may-cung-khong-nen-an-nhieu-2523211.html "Những bộ phận của bò dù thích đến mấy cũng không nên ăn nhiều")
+###  [ Bác sĩ và nghìn lẻ tình huống khó nói: 'Chúng tôi đã cố hết sức' ](https://vietnamnet.vn/bac-si-va-nghin-le-tinh-huong-kho-noi-chung-toi-da-co-het-suc-2517687.html "Bác sĩ và nghìn lẻ tình huống khó nói: 'Chúng tôi đã cố hết sức'") [ ![icon binh luan](https://static.vnncdn.net/v1/icon/binh-luan.svg) 10 ](https://vietnamnet.vn/bac-si-va-nghin-le-tinh-huong-kho-noi-chung-toi-da-co-het-suc-2517687.html#comment)
+##  [ Các loại bệnh ](https://vietnamnet.vn/suc-khoe/benh "Các loại bệnh")
+[ ](https://vietnamnet.vn/loi-day-dut-cua-nguoi-phu-nu-tre-bi-ung-thu-di-can-giai-doan-4-2522521.html "Lời day dứt của người phụ nữ trẻ bị ung thư di căn giai đoạn 4")
+###  [ Lời day dứt của người phụ nữ trẻ bị ung thư di căn giai đoạn 4 ](https://vietnamnet.vn/loi-day-dut-cua-nguoi-phu-nu-tre-bi-ung-thu-di-can-giai-doan-4-2522521.html "Lời day dứt của người phụ nữ trẻ bị ung thư di căn giai đoạn 4")
+Từng nghĩ khối u nhỏ chỉ là dấu hiệu tắc tia sữa sau sinh, chị Thương không đi khám vì cho rằng đó là chuyện bình thường. Đến khi nhận chẩn đoán ung thư vú giai đoạn 4 tại Bệnh viện K, người phụ nữ trẻ như sụp đổ. 
+###  [ Khoảnh khắc vỡ òa của người phụ nữ có nốt ruồi hóa ung thư, phá hủy cánh mũi ](https://vietnamnet.vn/khoanh-khac-vo-oa-cua-nguoi-phu-nu-co-not-ruoi-hoa-ung-thu-pha-huy-canh-mui-2516551.html "Khoảnh khắc vỡ òa của người phụ nữ có nốt ruồi hóa ung thư, phá hủy cánh mũi")
+###  [ Giáo sư tim mạch hàng đầu lý giải vì sao nhiều người khó kiểm soát được huyết áp ](https://vietnamnet.vn/giao-su-tim-mach-hang-dau-ly-giai-vi-sao-nhieu-nguoi-kho-kiem-soat-duoc-huyet-ap-2515370.html "Giáo sư tim mạch hàng đầu lý giải vì sao nhiều người khó kiểm soát được huyết áp")
+###  [ Nhiều người bị đau đầu nhưng khi nào nên đi khám u não? ](https://vietnamnet.vn/5-dau-hieu-dau-dau-can-di-kham-u-nao-2516827.html "Nhiều người bị đau đầu nhưng khi nào nên đi khám u não?")
+![back_to_top](https://static.vnncdn.net/v1/icon/arrow-01.svg)
+![](https://tracking3.vnncdn.net/tracking/detail?id=2518285&w=000003) ![](https://track-srv.vietnamnet.vn/jsx/trackingv3/pageview/data.jsx?Url=https%3A%2F%2Fvietnamnet.vn%2Float-ca-si-dinh-chat-cam-ma-tuy-pha-huy-nao-bo-nguoi-tre-ra-sao-2518285.html&action=view&randId=1657&domain=vietnamnet.vn&catealias=suc-khoe&aid=2518285)
