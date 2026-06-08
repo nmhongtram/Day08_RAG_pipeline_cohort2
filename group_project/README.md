@@ -180,10 +180,9 @@ run_dashboard()
 
 | Thành viên | MSSV | Nhiệm vụ | Trạng thái |
 |-----------|------|----------|------------|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+|Nguyễn Mai Hồng Trâm | 2A202600957 | Xây dựng Golden Dataset, Ground Truth, Expected Context | In Progress |
+|Nguyễn Ngọc Anh | 2A202600842 | Xây dựng Evaluation Pipeline bằng RAGAS/DeepEval | In Progress |
+|Ngô Thị Ngọc Ánh | 2A202600618 | Thiết kế A/B Test, phân tích kết quả, viết báo cáo | In Progress  |
 
 ---
 

@@ -1,17 +1,92 @@
 [
   {
-    "question": "Hình phạt cho tội tàng trữ trái phép chất ma tuý theo Điều 249 Bộ luật Hình sự?",
-    "expected_answer": "Phạt tù từ 1 đến 5 năm đối với trường hợp tàng trữ từ 1g đến dưới 5g heroin hoặc cocaine, hoặc chất ma tuý khác với khối lượng tương đương.",
-    "expected_context": "Bộ luật Hình sự 2015, Điều 249"
+    "question": "Theo Điều 2 Luật Phòng, chống ma túy 2021, \"chất ma túy\" được định nghĩa như thế nào?",
+    "expected_answer": "Chất ma túy là chất gây nghiện, chất hướng thần được quy định trong danh mục chất ma túy do Chính phủ ban hành.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 2, Khoản 1"
   },
   {
-    "question": "Luật Phòng chống ma tuý 2021 quy định những hình thức cai nghiện nào?",
-    "expected_answer": "Cai nghiện tự nguyện tại gia đình, cai nghiện tự nguyện tại cộng đồng, cai nghiện tự nguyện tại cơ sở cai nghiện, và cai nghiện bắt buộc tại cơ sở cai nghiện.",
-    "expected_context": "Luật Phòng chống ma tuý 2021, Chương V"
+    "question": "\"Tiền chất\" theo quy định tại Điều 2 Luật Phòng, chống ma túy 2021 là gì?",
+    "expected_answer": "Tiền chất là hóa chất không thể thiếu được trong quá trình điều chế, sản xuất chất ma túy, được quy định trong danh mục tiền chất do Chính phủ ban hành.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 2, Khoản 4"
   },
   {
-    "question": "Danh mục các chất ma tuý thuộc nhóm I theo quy định pháp luật Việt Nam gồm những chất nào?",
-    "expected_answer": "Nhóm I gồm các chất ma tuý tuyệt đối cấm sử dụng trong y học và đời sống, bao gồm heroin, cocaine, methamphetamine, MDMA (ecstasy), cannabis (cần sa), và các chất tương tự.",
-    "expected_context": "Nghị định 57/2022/NĐ-CP, Phụ lục I"
+    "question": "Luật Phòng, chống ma túy 2021 nghiêm cấm những hành vi nào liên quan đến việc sử dụng trái phép chất ma túy?",
+    "expected_answer": "Luật nghiêm cấm sử dụng, tổ chức sử dụng trái phép chất ma túy; cưỡng bức, lôi kéo người khác sử dụng trái phép chất ma túy; chứa chấp, hỗ trợ việc sử dụng trái phép chất ma túy.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 5, Khoản 5"
+  },
+  {
+    "question": "Thời hạn quản lý đối với người sử dụng trái phép chất ma túy theo Điều 23 Luật Phòng, chống ma túy 2021 là bao lâu?",
+    "expected_answer": "Thời hạn quản lý người sử dụng trái phép chất ma túy là 01 năm kể từ ngày Chủ tịch Ủy ban nhân dân cấp xã ra quyết định quản lý.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 23, Khoản 2"
+  },
+  {
+    "question": "Theo Điều 28 Luật Phòng, chống ma túy 2021, có những biện pháp cai nghiện ma túy nào và được thực hiện ở đâu?",
+    "expected_answer": "Có hai biện pháp cai nghiện ma túy: cai nghiện tự nguyện (thực hiện tại gia đình, cộng đồng hoặc tại cơ sở cai nghiện ma túy) và cai nghiện bắt buộc (thực hiện tại cơ sở cai nghiện ma túy công lập).",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 28"
+  },
+  {
+    "question": "Quy trình cai nghiện ma túy theo Điều 29 Luật Phòng, chống ma túy 2021 gồm những giai đoạn nào?",
+    "expected_answer": "Gồm 5 giai đoạn: tiếp nhận, phân loại; điều trị cắt cơn, giải độc, điều trị rối loạn tâm thần và các bệnh lý khác; giáo dục, tư vấn, phục hồi hành vi, nhân cách; lao động trị liệu, học nghề; chuẩn bị tái hòa nhập cộng đồng.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 29, Khoản 1"
+  },
+  {
+    "question": "Thời hạn cai nghiện ma túy tự nguyện tại gia đình, cộng đồng theo Điều 30 Luật Phòng, chống ma túy 2021 là bao lâu?",
+    "expected_answer": "Thời hạn cai nghiện ma túy tự nguyện tại gia đình, cộng đồng là từ đủ 06 tháng đến 12 tháng.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 30, Khoản 2"
+  },
+  {
+    "question": "Người nghiện ma túy từ đủ 18 tuổi trở lên bị áp dụng biện pháp đưa vào cơ sở cai nghiện bắt buộc trong những trường hợp nào theo Điều 32?",
+    "expected_answer": "Khi không đăng ký, không thực hiện hoặc tự ý chấm dứt cai nghiện tự nguyện; bị phát hiện sử dụng trái phép chất ma túy trong thời gian cai nghiện tự nguyện; không đăng ký, không thực hiện hoặc tự ý chấm dứt (hoặc bị chấm dứt do vi phạm) điều trị nghiện các chất dạng thuốc phiện bằng thuốc thay thế; hoặc tái nghiện trong thời gian quản lý sau cai nghiện ma túy.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 32"
+  },
+  {
+    "question": "Việc đưa người nghiện ma túy từ đủ 12 tuổi đến dưới 18 tuổi vào cơ sở cai nghiện bắt buộc do cơ quan nào quyết định?",
+    "expected_answer": "Do Tòa án nhân dân cấp huyện quyết định; đây không phải là biện pháp xử lý hành chính.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 33, Khoản 4"
+  },
+  {
+    "question": "Cơ sở cai nghiện ma túy công lập do cơ quan nào quyết định thành lập?",
+    "expected_answer": "Cơ sở cai nghiện ma túy công lập do Chủ tịch Ủy ban nhân dân cấp tỉnh quyết định thành lập.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 35, Khoản 1"
+  },
+  {
+    "question": "Thời hạn quản lý sau cai nghiện ma túy được quy định như thế nào tại Điều 40 Luật Phòng, chống ma túy 2021?",
+    "expected_answer": "Người đã hoàn thành cai nghiện tự nguyện, hoàn thành điều trị nghiện các chất dạng thuốc phiện bằng thuốc thay thế, hoặc người từ đủ 12 đến dưới 18 tuổi đã chấp hành xong quyết định đưa vào cơ sở cai nghiện bắt buộc thì chịu quản lý sau cai nghiện trong 01 năm; người đã chấp hành xong quyết định xử lý hành chính đưa vào cơ sở cai nghiện bắt buộc thì chịu quản lý sau cai nghiện trong 02 năm.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 40, Khoản 1-2"
+  },
+  {
+    "question": "Cơ quan nào là cơ quan đầu mối giúp Chính phủ thực hiện quản lý nhà nước về phòng, chống ma túy?",
+    "expected_answer": "Bộ Công an là cơ quan đầu mối giúp Chính phủ thực hiện quản lý nhà nước về phòng, chống ma túy.",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 45, Khoản 2"
+  },
+  {
+    "question": "Luật Phòng, chống ma túy số 73/2021/QH14 có hiệu lực thi hành từ ngày nào và thay thế văn bản nào?",
+    "expected_answer": "Luật có hiệu lực thi hành từ ngày 01 tháng 01 năm 2022 và thay thế Luật Phòng, chống ma túy số 23/2000/QH10 (đã được sửa đổi, bổ sung theo Luật số 16/2008/QH12).",
+    "expected_context": "Luật Phòng, chống ma túy 73/2021/QH14, Điều 54"
+  },
+  {
+    "question": "Nghị định 28/2026/NĐ-CP quy định bao nhiêu danh mục chất ma túy và tiền chất, gồm những danh mục nào?",
+    "expected_answer": "Nghị định quy định 4 danh mục: Danh mục I (các chất ma túy tuyệt đối cấm sử dụng trong y học và đời sống xã hội), Danh mục II (các chất ma túy được sử dụng hạn chế trong nghiên cứu, y tế, quốc phòng - an ninh), Danh mục III (các chất ma túy được sử dụng trong nghiên cứu, kiểm nghiệm, y tế, thú y) và Danh mục IV (các tiền chất).",
+    "expected_context": "Nghị định 28/2026/NĐ-CP, Điều 1"
+  },
+  {
+    "question": "Theo Phụ lục Danh mục I của Nghị định 28/2026/NĐ-CP, những chất ma túy nào bị tuyệt đối cấm sử dụng trong y học và đời sống xã hội?",
+    "expected_answer": "Danh mục I gồm các chất ma túy tuyệt đối cấm sử dụng trong y học và đời sống xã hội như Heroin (Diacetylmorphine), cây thuốc phiện/cây anh túc và các chế phẩm từ thuốc phiện, cây cần sa và các chế phẩm từ cần sa, MDMA, Carfentanil, Desomorphine, Etorphine...; việc sử dụng các chất này trong nghiên cứu, kiểm nghiệm, giám định chỉ được thực hiện vì mục đích quốc phòng, an ninh theo quy định đặc biệt của cơ quan có thẩm quyền.",
+    "expected_context": "Nghị định 28/2026/NĐ-CP, Phụ lục Danh mục I"
+  },
+  {
+    "question": "Theo Điều 2 Nghị định 28/2026/NĐ-CP, Bộ nào có trách nhiệm ban hành danh mục và quản lý nhà nước về các chất ma túy, tiền chất sử dụng trong lĩnh vực y tế?",
+    "expected_answer": "Bộ Y tế có trách nhiệm ban hành danh mục và quản lý nhà nước về các chất ma túy, tiền chất được sử dụng trong lĩnh vực y tế.",
+    "expected_context": "Nghị định 28/2026/NĐ-CP, Điều 2, Khoản 3"
+  },
+  {
+    "question": "Nghị định 28/2026/NĐ-CP có hiệu lực thi hành từ ngày nào và thay thế những văn bản nào?",
+    "expected_answer": "Nghị định có hiệu lực thi hành từ ngày 19 tháng 01 năm 2026, đồng thời làm hết hiệu lực Nghị định số 57/2022/NĐ-CP ngày 25/8/2022 và Nghị định số 90/2024/NĐ-CP ngày 17/7/2024 quy định về danh mục chất ma túy và tiền chất.",
+    "expected_context": "Nghị định 28/2026/NĐ-CP, Điều 3, Khoản 1-2"
+  },
+  {
+    "question": "Theo Điều 3 Nghị định 28/2026/NĐ-CP, các tổ chức, cá nhân sản xuất, kinh doanh hợp pháp Carisoprodol và Etomidate phải thực hiện quy định về quản lý chất ma túy kể từ thời điểm nào?",
+    "expected_answer": "Các tổ chức, cá nhân sản xuất, kinh doanh hợp pháp Carisoprodol, Etomidate phải thực hiện các quy định về quản lý chất ma túy theo Nghị định này kể từ ngày 01 tháng 6 năm 2026.",
+    "expected_context": "Nghị định 28/2026/NĐ-CP, Điều 3, Khoản 3"
   }
 ]
