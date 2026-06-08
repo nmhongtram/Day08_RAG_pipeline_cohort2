@@ -1,8 +1,8 @@
 # RAG Evaluation Results
 
 **Framework:** RAGAS
-**Date:** 2026-06-08 18:56
-**Golden Dataset:** 18 Q&A pairs
+**Date:** 2026-06-08 22:38
+**Golden Dataset:** 24 Q&A pairs
 **Retrieval:** BM25 (rank_bm25) trên group_project\data\standardized
 **Generation LLM:** gpt-4o-mini
 **Evaluation LLM:** gpt-4o-mini
@@ -13,11 +13,11 @@
 
 | Metric | Config A (top_k=5) | Config B (top_k=2) | Δ (B−A) |
 |--------|-------------------|-------------------|---------|
-| Faithfulness              | 0.6204 | 0.5000 | -0.1204 |
-| Answer Relevancy          | 0.4045 | 0.3706 | -0.0339 |
-| Context Recall            | 0.8352 | 0.7056 | -0.1296 |
-| Context Precision         | 0.8067 | 0.8333 | +0.0266 |
-| **Average                ** | **0.6667** | **0.6024** | **-0.0643** |
+| Faithfulness              | 0.7344 | 0.5003 | -0.2340 |
+| Answer Relevancy          | 0.3800 | 0.2667 | -0.1133 |
+| Context Recall            | 0.8269 | 0.7269 | -0.1000 |
+| Context Precision         | 0.8970 | 0.9375 | +0.0405 |
+| **Average                ** | **0.7096** | **0.6079** | **-0.1017** |
 
 ---
 
@@ -36,7 +36,7 @@
 - Nhược điểm: thiếu evidence → Context Recall thấp hơn
 
 **Kết luận:**
-Config A (top_k=5) cho kết quả tổng hợp tốt hơn (avg_score: Config A=0.6667 vs Config B=0.6024).
+Config A (top_k=5) cho kết quả tổng hợp tốt hơn (avg_score: Config A=0.7096 vs Config B=0.6079).
 Đây là trade-off điển hình giữa Recall và Precision — cần chọn top_k phù hợp với use case:
 - Câu hỏi cần tổng hợp nhiều điều khoản → nên dùng top_k lớn
 - Câu hỏi factual đơn giản → top_k nhỏ để tránh nhiễu
@@ -47,9 +47,9 @@ Config A (top_k=5) cho kết quả tổng hợp tốt hơn (avg_score: Config A=
 
 | # | Question | Avg Score | Root Cause |
 |---|----------|-----------|------------|
-| 1 | Thời hạn quản lý sau cai nghiện ma túy được quy định như thế nào tại Đ... | 0.2500 | BM25 không retrieve đủ evidence (low recall); LLM hallucinate ngoài context (low faithfulness); Câu trả lời không bám sát câu hỏi (low relevancy) |
-| 2 | "Tiền chất" theo quy định tại Điều 2 Luật Phòng, chống ma túy 2021 là ... | 0.2500 | Context chứa nhiều chunks không liên quan (low precision); LLM hallucinate ngoài context (low faithfulness); Câu trả lời không bám sát câu hỏi (low relevancy) |
-| 3 | Quy trình cai nghiện ma túy theo Điều 29 Luật Phòng, chống ma túy 2021... | 0.3000 | BM25 không retrieve đủ evidence (low recall); LLM hallucinate ngoài context (low faithfulness); Câu trả lời không bám sát câu hỏi (low relevancy) |
+| 1 | "Tiền chất" theo quy định tại Điều 2 Luật Phòng, chống ma túy 2021 là ... | 0.0812 | BM25 không retrieve đủ evidence (low recall); Context chứa nhiều chunks không liên quan (low precision); LLM hallucinate ngoài context (low faithfulness); Câu trả lời không bám sát câu hỏi (low relevancy) |
+| 2 | Theo Điều 4 Nghị định 105/2021/NĐ-CP, "sản xuất chất ma túy" được giải... | 0.1125 | BM25 không retrieve đủ evidence (low recall); Context chứa nhiều chunks không liên quan (low precision); LLM hallucinate ngoài context (low faithfulness); Câu trả lời không bám sát câu hỏi (low relevancy) |
+| 3 | Theo Phụ lục Danh mục I của Nghị định 28/2026/NĐ-CP, những chất ma túy... | 0.3750 | LLM hallucinate ngoài context (low faithfulness); Câu trả lời không bám sát câu hỏi (low relevancy) |
 
 **Phân tích:**
 Hầu hết các câu hỏi có điểm thấp rơi vào 2 trường hợp:
