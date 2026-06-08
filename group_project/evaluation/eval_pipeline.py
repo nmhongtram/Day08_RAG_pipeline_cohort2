@@ -33,6 +33,7 @@ if hasattr(sys.stderr, "reconfigure"):
 from datetime import datetime
 from pathlib import Path
 
+import pandas as pd
 import numpy as np
 from dotenv import load_dotenv
 from rank_bm25 import BM25Okapi
@@ -331,8 +332,15 @@ def compare_configs(golden_dataset: list[dict]) -> dict[str, dict]:
 
 def _aggregate_scores(df) -> dict[str, float]:
     """Lấy mean score cho mỗi metric từ RAGAS result DataFrame."""
-    score_cols = [c for c in df.columns if c not in ("user_input", "response", "retrieved_contexts", "reference")]
-    return {col: float(df[col].mean()) for col in score_cols}
+    METADATA_COLS = {
+        "user_input", "response", "retrieved_contexts", "reference",  # RAGAS 0.2.x
+        "question", "answer", "contexts", "ground_truth",              # RAGAS 0.1.x
+    }
+    score_cols = [c for c in df.columns if c not in METADATA_COLS]
+    return {
+        col: float(pd.to_numeric(df[col], errors="coerce").mean())
+        for col in score_cols
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -347,13 +355,16 @@ def find_worst_performers(df, eval_data: dict, n: int = 3) -> list[dict]:
     """
     score_cols = [
         c for c in df.columns
-        if c not in ("user_input", "response", "retrieved_contexts", "reference")
+        if any(k in c.lower() for k in ["faith", "relev", "recall", "precision"])
     ]
+
     if not score_cols:
         return []
 
     df = df.copy()
-    df["avg_score"] = df[score_cols].mean(axis=1)
+
+    df_numeric = df[score_cols].apply(pd.to_numeric, errors="coerce")
+    df["avg_score"] = df_numeric.mean(axis=1)
 
     worst_indices = df["avg_score"].nsmallest(n).index.tolist()
 
@@ -363,7 +374,11 @@ def find_worst_performers(df, eval_data: dict, n: int = 3) -> list[dict]:
         worst.append({
             "question": eval_data["question"][idx],
             "avg_score": float(row["avg_score"]),
-            "scores": {col: float(row[col]) for col in score_cols},
+            "scores": {
+                col: float(pd.to_numeric(row[col], errors="coerce"))
+                for col in score_cols
+                if pd.notna(pd.to_numeric(row[col], errors="coerce"))
+            }
         })
     return worst
 
