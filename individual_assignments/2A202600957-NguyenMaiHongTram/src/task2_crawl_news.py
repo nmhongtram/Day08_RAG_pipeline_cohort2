@@ -26,10 +26,20 @@ def setup_directory():
 
 # TODO: Điền danh sách URL bài báo cần crawl
 ARTICLE_URLS = [
-    # Ví dụ:
-    # "https://vnexpress.net/...",
-    # "https://tuoitre.vn/...",
-    # "https://thanhnien.vn/...",
+    # Hữu Tín
+    "https://vietnamnet.vn/dien-vien-huu-tin-khai-bi-bat-khi-vua-nhai-nuot-nua-vien-ma-tuy-2031405.html",
+
+    # Chi Dân
+    "https://tuoitre.vn/bat-nguoi-mau-an-tay-ca-si-chi-dan-co-tien-truc-phuong-do-lien-quan-ma-tuy-20241114114826655.htm",
+
+    # Châu Việt Cường
+    "https://thanhnien.vn/ca-si-chau-viet-cuong-linh-an-13-nam-tu-185230119000000000.htm",
+
+    # Hiệp Gà
+    "https://vnexpress.net/hiep-ga-linh-2-nam-tu-vi-ma-tuy-2056638.html",
+
+    # Lệ Hằng
+    "https://plo.vn/dien-vien-le-hang-va-vet-truot-dai-vi-ma-tuy-post000000.html"
 ]
 
 
@@ -48,14 +58,24 @@ async def crawl_article(url: str) -> dict:
     from crawl4ai import AsyncWebCrawler
 
     # TODO: Implement crawling logic
-    # async with AsyncWebCrawler() as crawler:
-    #     result = await crawler.arun(url=url)
-    #     return {
-    #         "url": url,
-    #         "title": result.metadata.get("title", "Unknown"),
-    #         "date_crawled": datetime.now().isoformat(),
-    #         "content_markdown": result.markdown,
-    #     }
+    async with AsyncWebCrawler() as crawler:
+        result = await crawler.arun(url=url)
+
+        title = "Unknown"
+
+        if hasattr(result, "metadata") and result.metadata:
+            title = (
+                result.metadata.get("title")
+                or result.metadata.get("og:title")
+                or "Unknown"
+            )
+
+        return {
+            "url": url,
+            "title": title,
+            "date_crawled": datetime.now().isoformat(),
+            "content_markdown": result.markdown,
+        }
     raise NotImplementedError("Implement crawl_article")
 
 
@@ -70,7 +90,7 @@ async def crawl_all():
         # Lưu file JSON
         filename = f"article_{i:02d}.json"
         filepath = DATA_DIR / filename
-        filepath.write_text(json.dumps(article, ensure_ascii=False, indent=2))
+        filepath.write_text(json.dumps(article, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"  ✓ Saved: {filepath}")
 
 
