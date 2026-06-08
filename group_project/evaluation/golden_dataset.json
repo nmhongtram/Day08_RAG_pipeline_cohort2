@@ -88,5 +88,35 @@
     "question": "Theo Điều 3 Nghị định 28/2026/NĐ-CP, các tổ chức, cá nhân sản xuất, kinh doanh hợp pháp Carisoprodol và Etomidate phải thực hiện quy định về quản lý chất ma túy kể từ thời điểm nào?",
     "expected_answer": "Các tổ chức, cá nhân sản xuất, kinh doanh hợp pháp Carisoprodol, Etomidate phải thực hiện các quy định về quản lý chất ma túy theo Nghị định này kể từ ngày 01 tháng 6 năm 2026.",
     "expected_context": "Nghị định 28/2026/NĐ-CP, Điều 3, Khoản 3"
+  },
+  {
+    "question": "Theo Điều 4 Nghị định 105/2021/NĐ-CP, \"sản xuất chất ma túy\" được giải thích như thế nào?",
+    "expected_answer": "Sản xuất chất ma túy là hoạt động tạo ra chất ma túy từ cây có chứa chất ma túy, tiền chất, hóa chất hoặc từ chất ma túy khác dưới mọi hình thức, cách thức, phương pháp; việc sản xuất này không bao gồm việc trồng cây có chứa chất ma túy.",
+    "expected_context": "Nghị định 105/2021/NĐ-CP, Điều 4, Khoản 1"
+  },
+  {
+    "question": "Theo Điều 38 Nghị định 105/2021/NĐ-CP, một người được coi là \"có dấu hiệu sử dụng trái phép chất ma túy\" khi có những căn cứ nào?",
+    "expected_answer": "Khi có một trong các căn cứ: tin báo, tố giác đã được cơ quan có thẩm quyền xác minh, làm rõ; thông tin, tài liệu trong các vụ vi phạm pháp luật; có biểu hiện mất năng lực nhận thức hoặc kiểm soát hành vi nghi do sử dụng ma túy; trên người, phương tiện, nơi ở có dấu vết chất ma túy hoặc dụng cụ sử dụng trái phép; người điều khiển phương tiện có biểu hiện sử dụng chất kích thích nghi là ma túy; có mặt tại nơi tổ chức, chứa chấp hoặc sử dụng trái phép chất ma túy mà không có lý do chính đáng; tự khai báo hành vi sử dụng; bị phát hiện quả tang; hoặc các căn cứ khác theo quy định của pháp luật.",
+    "expected_context": "Nghị định 105/2021/NĐ-CP, Điều 38, Khoản 1"
+  },
+  {
+    "question": "Theo Điều 43 Nghị định 105/2021/NĐ-CP, thời hạn quản lý người sử dụng trái phép chất ma túy là bao lâu và được xử lý ra sao nếu người đó tiếp tục vi phạm hoặc chuyển nơi cư trú trong thời hạn quản lý?",
+    "expected_answer": "Thời hạn quản lý là 01 năm kể từ ngày Chủ tịch Ủy ban nhân dân cấp xã ra Quyết định quản lý. Nếu trong thời hạn quản lý mà người đó bị phát hiện tiếp tục sử dụng trái phép chất ma túy (không thuộc trường hợp tại khoản 5 Điều 23 Luật Phòng, chống ma túy) thì Chủ tịch Ủy ban nhân dân cấp xã ra Quyết định quản lý mới với thời hạn 01 năm tính từ ngày ra quyết định mới; nếu người đó chuyển nơi cư trú thì thời hạn quản lý được tính tiếp từ ngày chuyển đi cho tới khi hết thời gian quản lý còn lại.",
+    "expected_context": "Nghị định 105/2021/NĐ-CP, Điều 43"
+  },
+  {
+    "question": "Theo Điều 48 Nghị định 105/2021/NĐ-CP, Chủ tịch Ủy ban nhân dân cấp xã ra quyết định \"dừng quản lý\" và \"chấm dứt quản lý\" người sử dụng trái phép chất ma túy trong những trường hợp nào?",
+    "expected_answer": "Quyết định \"dừng quản lý\" (theo Mẫu số 09) được ban hành đối với các trường hợp quy định tại khoản 5 Điều 23 Luật Phòng, chống ma túy; quyết định \"chấm dứt quản lý\" (theo Mẫu số 10) được ban hành khi đã hết thời hạn quản lý mà không phát hiện người bị quản lý có hành vi sử dụng trái phép chất ma túy.",
+    "expected_context": "Nghị định 105/2021/NĐ-CP, Điều 48, Khoản 1-2"
+  },
+  {
+    "question": "Nghị định 105/2021/NĐ-CP có hiệu lực thi hành từ ngày nào và làm hết hiệu lực những văn bản nào?",
+    "expected_answer": "Nghị định có hiệu lực thi hành từ ngày 01 tháng 01 năm 2022, đồng thời làm hết hiệu lực: Nghị định số 80/2001/NĐ-CP (hướng dẫn kiểm soát các hoạt động hợp pháp liên quan đến ma túy ở trong nước), Nghị định số 58/2003/NĐ-CP (kiểm soát nhập khẩu, xuất khẩu, vận chuyển quá cảnh chất ma túy, tiền chất, thuốc gây nghiện, thuốc hướng thần), Nghị định số 45/2009/NĐ-CP (hướng dẫn nhập khẩu mẫu, lấy mẫu, quản lý sử dụng mẫu các chất ma túy vì mục đích quốc phòng, an ninh), Quyết định số 133/2002/QĐ-TTg và Quyết định số 52/2011/QĐ-TTg (các quy chế phối hợp kiểm soát hoạt động liên quan đến ma túy).",
+    "expected_context": "Nghị định 105/2021/NĐ-CP, Điều 57"
+  },
+  {
+    "question": "Theo Điều 50 Nghị định 105/2021/NĐ-CP, Bộ Công an có trách nhiệm gì trong việc phát hiện và quản lý người sử dụng trái phép chất ma túy?",
+    "expected_answer": "Bộ Công an chỉ đạo lực lượng Công an các cấp thực hiện và phối hợp với cơ quan, tổ chức có liên quan để phát hiện, quản lý người sử dụng trái phép chất ma túy; đồng thời hướng dẫn Công an cấp xã lập danh sách người sử dụng trái phép chất ma túy.",
+    "expected_context": "Nghị định 105/2021/NĐ-CP, Điều 50, Khoản 6-7"
   }
 ]
