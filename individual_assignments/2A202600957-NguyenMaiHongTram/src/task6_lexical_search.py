@@ -15,10 +15,51 @@ BM25 hoạt động thế nào:
     - k1=1.5 (term saturation), b=0.75 (length normalization)
 """
 
+import json
 from pathlib import Path
 
-# TODO: Load corpus từ data/standardized/ hoặc từ vector store
+from .task4_chunking_indexing import chunk_documents, load_documents
+
+# Corpus = tất cả chunks tạo ra ở Task 4 (cùng nguồn dữ liệu, cùng ranh giới
+# chunk với semantic search, để hybrid search ở Task 9 so sánh "táo với táo").
 CORPUS: list[dict] = []  # List of {'content': str, 'metadata': dict}
+
+_bm25_index = None
+
+# Re-chunk toàn bộ corpus bằng SemanticChunker khá tốn thời gian (phải embed
+# từng câu). Cache kết quả ra đĩa để các lần chạy sau (và các test khác trong
+# cùng phiên pytest) tái sử dụng thay vì build lại từ đầu.
+_CORPUS_CACHE_PATH = Path(__file__).parent.parent / "data" / "bm25_corpus_cache.json"
+
+
+def _tokenize(text: str) -> list[str]:
+    """Tokenize đơn giản cho tiếng Việt: lowercase + split theo khoảng trắng."""
+    return text.lower().split()
+
+
+def _ensure_corpus() -> list[dict]:
+    """
+    Lazy-load CORPUS từ data/standardized/ (qua cùng pipeline chunk ở Task 4),
+    có cache ra đĩa (data/bm25_corpus_cache.json) vì semantic chunking toàn bộ
+    corpus khá chậm (phải embed từng câu để dò ranh giới ngữ nghĩa).
+    """
+    global CORPUS
+    if CORPUS:
+        return CORPUS
+
+    if _CORPUS_CACHE_PATH.exists():
+        CORPUS = json.loads(_CORPUS_CACHE_PATH.read_text(encoding="utf-8"))
+        return CORPUS
+
+    CORPUS = chunk_documents(load_documents())
+    try:
+        _CORPUS_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        _CORPUS_CACHE_PATH.write_text(
+            json.dumps(CORPUS, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+    except OSError:
+        pass
+    return CORPUS
 
 
 def build_bm25_index(corpus: list[dict]):
@@ -27,16 +68,14 @@ def build_bm25_index(corpus: list[dict]):
 
     Args:
         corpus: List of {'content': str, 'metadata': dict}
+
+    Returns:
+        BM25Okapi index đã được build trên corpus đã tokenize.
     """
-    # TODO: Implement BM25 index
-    #
-    # from rank_bm25 import BM25Okapi
-    #
-    # # Tokenize - cho tiếng Việt nên dùng underthesea hoặc đơn giản split()
-    # tokenized_corpus = [doc["content"].lower().split() for doc in corpus]
-    # bm25 = BM25Okapi(tokenized_corpus)
-    # return bm25
-    raise NotImplementedError("Implement build_bm25_index")
+    from rank_bm25 import BM25Okapi
+
+    tokenized_corpus = [_tokenize(doc["content"]) for doc in corpus]
+    return BM25Okapi(tokenized_corpus)
 
 
 def lexical_search(query: str, top_k: int = 10) -> list[dict]:
@@ -55,25 +94,31 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
         }
         Sorted by score descending.
     """
-    # TODO: Implement lexical search
-    #
-    # tokenized_query = query.lower().split()
-    # scores = bm25.get_scores(tokenized_query)
-    #
-    # # Get top_k indices
-    # import numpy as np
-    # top_indices = np.argsort(scores)[::-1][:top_k]
-    #
-    # results = []
-    # for idx in top_indices:
-    #     if scores[idx] > 0:
-    #         results.append({
-    #             "content": CORPUS[idx]["content"],
-    #             "score": float(scores[idx]),
-    #             "metadata": CORPUS[idx]["metadata"]
-    #         })
-    # return results
-    raise NotImplementedError("Implement lexical_search")
+    global _bm25_index
+
+    corpus = _ensure_corpus()
+    if not corpus:
+        return []
+
+    if _bm25_index is None:
+        _bm25_index = build_bm25_index(corpus)
+
+    import numpy as np
+
+    tokenized_query = _tokenize(query)
+    scores = _bm25_index.get_scores(tokenized_query)
+
+    top_indices = np.argsort(scores)[::-1][:top_k]
+
+    results = []
+    for idx in top_indices:
+        if scores[idx] > 0:
+            results.append({
+                "content": corpus[idx]["content"],
+                "score": float(scores[idx]),
+                "metadata": corpus[idx]["metadata"],
+            })
+    return results
 
 
 if __name__ == "__main__":
