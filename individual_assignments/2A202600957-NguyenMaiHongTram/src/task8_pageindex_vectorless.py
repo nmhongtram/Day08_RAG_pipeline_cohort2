@@ -5,48 +5,99 @@ Task 8 — PageIndex Vectorless RAG.
 SDK & sample code: https://github.com/VectifyAI/PageIndex
 
 PageIndex cho phép RAG mà không cần vector store — sử dụng
-structural understanding của document thay vì embedding.
+structural understanding của document (cây mục lục / heading) thay vì
+embedding + ANN search. Dùng làm fallback khi hybrid search (Task 9)
+không tìm được kết quả đủ tốt.
 
 Cài đặt:
     pip install pageindex
 
 Hướng dẫn:
     1. Đăng ký account tại pageindex.ai
-    2. Lấy API key
-    3. Upload documents
-    4. Query sử dụng PageIndex API
+    2. Lấy API key, set PAGEINDEX_API_KEY trong .env
+    3. Upload documents (PDF gốc trong data/landing/legal/)
+    4. Query sử dụng PageIndex API (submit_query → poll → get_retrieval)
 """
 
+import json
 import os
+import time
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
 
 PAGEINDEX_API_KEY = os.getenv("PAGEINDEX_API_KEY", "")
 STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
+LANDING_LEGAL_DIR = Path(__file__).parent.parent / "data" / "landing" / "legal"
+
+# Cache mapping doc_id -> tên file gốc, để khỏi phải re-upload mỗi lần search
+DOC_MAP_PATH = Path(__file__).parent.parent / "data" / "pageindex_doc_map.json"
 
 
-def upload_documents():
+def _load_doc_map() -> dict:
+    if DOC_MAP_PATH.exists():
+        return json.loads(DOC_MAP_PATH.read_text(encoding="utf-8"))
+    return {}
+
+
+def _save_doc_map(doc_map: dict) -> None:
+    DOC_MAP_PATH.parent.mkdir(parents=True, exist_ok=True)
+    DOC_MAP_PATH.write_text(json.dumps(doc_map, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def upload_documents() -> dict:
     """
-    Upload toàn bộ markdown documents lên PageIndex.
+    Upload toàn bộ văn bản pháp luật (PDF gốc trong data/landing/legal/)
+    lên PageIndex — PageIndex xử lý trực tiếp PDF (tự build tree + OCR),
+    nên ta dùng file gốc thay vì bản markdown đã chuẩn hoá.
+
+    Returns:
+        dict mapping {doc_id: filename}
     """
-    # TODO: Implement upload
-    #
-    # Tham khảo: https://github.com/VectifyAI/PageIndex
-    #
-    # from pageindex import PageIndex
-    #
-    # pi = PageIndex(api_key=PAGEINDEX_API_KEY)
-    #
-    # for md_file in STANDARDIZED_DIR.rglob("*.md"):
-    #     content = md_file.read_text(encoding="utf-8")
-    #     pi.upload(
-    #         content=content,
-    #         metadata={"filename": md_file.name, "type": md_file.parent.name}
-    #     )
-    #     print(f"  ✓ Uploaded: {md_file.name}")
-    raise NotImplementedError("Implement upload_documents")
+    from pageindex import PageIndexClient
+
+    client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
+
+    doc_map = _load_doc_map()
+    for pdf_file in sorted(LANDING_LEGAL_DIR.glob("*.pdf")):
+        if pdf_file.name in doc_map.values():
+            continue
+        result = client.submit_document(str(pdf_file))
+        doc_id = result.get("doc_id")
+        if doc_id:
+            doc_map[doc_id] = pdf_file.name
+            print(f"  ✓ Uploaded: {pdf_file.name} -> doc_id={doc_id}")
+
+    _save_doc_map(doc_map)
+    return doc_map
+
+
+def _wait_until_ready(client, doc_id: str, timeout: float = 60.0, interval: float = 3.0) -> bool:
+    """Poll PageIndex cho tới khi document sẵn sàng cho retrieval (hoặc timeout)."""
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        if client.is_retrieval_ready(doc_id):
+            return True
+        time.sleep(interval)
+    return False
+
+
+def _extract_results(retrieval_result: dict) -> list[dict]:
+    """Chuẩn hoá kết quả trả về từ get_retrieval() — API có thể đặt tên field khác nhau."""
+    raw_items = (
+        retrieval_result.get("results")
+        or retrieval_result.get("nodes")
+        or retrieval_result.get("data")
+        or []
+    )
+    items = []
+    for item in raw_items:
+        content = item.get("content") or item.get("text") or item.get("summary") or ""
+        score = item.get("score", item.get("relevance_score", 0.0))
+        items.append({"content": content, "score": float(score), "raw": item})
+    return items
 
 
 def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
@@ -66,23 +117,35 @@ def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
             'source': 'pageindex'   # Đánh dấu nguồn retrieval
         }
     """
-    # TODO: Implement PageIndex query
-    #
-    # from pageindex import PageIndex
-    #
-    # pi = PageIndex(api_key=PAGEINDEX_API_KEY)
-    # results = pi.query(query=query, top_k=top_k)
-    #
-    # return [
-    #     {
-    #         "content": r.text,
-    #         "score": r.score,
-    #         "metadata": r.metadata,
-    #         "source": "pageindex"
-    #     }
-    #     for r in results
-    # ]
-    raise NotImplementedError("Implement pageindex_search")
+    from pageindex import PageIndexClient
+
+    client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
+
+    doc_map = _load_doc_map()
+    if not doc_map:
+        doc_map = upload_documents()
+
+    all_results: list[dict] = []
+    for doc_id, filename in doc_map.items():
+        if not _wait_until_ready(client, doc_id):
+            continue
+
+        submission = client.submit_query(doc_id=doc_id, query=query)
+        retrieval_id = submission.get("retrieval_id")
+        if not retrieval_id:
+            continue
+
+        retrieval = client.get_retrieval(retrieval_id)
+        for item in _extract_results(retrieval):
+            all_results.append({
+                "content": item["content"],
+                "score": item["score"],
+                "metadata": {"source": filename, "type": "legal", "doc_id": doc_id},
+                "source": "pageindex",
+            })
+
+    all_results.sort(key=lambda r: r["score"], reverse=True)
+    return all_results[:top_k]
 
 
 if __name__ == "__main__":

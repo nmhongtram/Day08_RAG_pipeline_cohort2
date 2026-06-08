@@ -28,23 +28,43 @@ Cài đặt:
 
 from pathlib import Path
 
+from .embeddings import (
+    EMBEDDING_DIM,
+    EMBEDDING_MODEL_NAME,
+    FastBreakpointEmbeddings,
+    embed_texts,
+)
+
 STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
+
+WEAVIATE_COLLECTION = "DrugLawDocs"
 
 
 # =============================================================================
 # CONFIGURATION — Giải thích lựa chọn của bạn trong comment
 # =============================================================================
 
-# TODO: Chọn chunking strategy và giải thích vì sao
-CHUNK_SIZE = 500        # Vì sao chọn 500? ...
-CHUNK_OVERLAP = 50      # Vì sao chọn 50? ...
-CHUNKING_METHOD = "recursive"  # "recursive" | "markdown_header" | "semantic"
+# Chunking strategy: SemanticChunker
+#   Văn bản pháp luật có các điều/khoản dài, ranh giới ngữ nghĩa không trùng
+#   với ranh giới ký tự cố định → tách theo ngữ nghĩa (similarity giữa các
+#   câu liền kề) giữ nguyên vẹn ý nghĩa của từng điều khoản/đoạn tin tức,
+#   tốt hơn cắt cứng theo số ký tự.
+# CHUNK_SIZE / CHUNK_OVERLAP: dùng làm ngưỡng "chốt chặn" — nếu 1 đoạn ngữ
+#   nghĩa quá dài (vượt CHUNK_SIZE), ta cắt tiếp bằng RecursiveCharacterText
+#   Splitter với overlap=CHUNK_OVERLAP để không vượt giới hạn kích thước
+#   (đảm bảo chunk không quá dài cho embedding model / context window) trong
+#   khi vẫn giữ được câu liền mạch nhờ overlap.
+CHUNK_SIZE = 500        # Đủ nhỏ để mỗi chunk tập trung 1 ý, vừa context LLM
+CHUNK_OVERLAP = 50      # ~10% CHUNK_SIZE — giữ liên kết ngữ cảnh giữa 2 chunk liền kề
+CHUNKING_METHOD = "semantic"  # "recursive" | "markdown_header" | "semantic"
 
-# TODO: Chọn embedding model và giải thích
-EMBEDDING_MODEL = "BAAI/bge-m3"  # Vì sao? Multilingual, tốt cho tiếng Việt
-EMBEDDING_DIM = 1024
+# Embedding model: BAAI/bge-m3 — multilingual, 1024-dim, tốt cho tiếng Việt
+# (xem giải thích chi tiết trong src/embeddings.py)
+EMBEDDING_MODEL = EMBEDDING_MODEL_NAME  # "BAAI/bge-m3"
+EMBEDDING_DIM = EMBEDDING_DIM           # 1024
 
-# TODO: Chọn vector store
+# Vector store: Weaviate — hỗ trợ hybrid search (dense + BM25) built-in,
+# vector thuần (Configure.Vectorizer.none()) vì ta tự embed bằng BGE-M3
 VECTOR_STORE = "weaviate"  # "weaviate" | "chromadb" | "faiss"
 
 
@@ -59,100 +79,170 @@ def load_documents() -> list[dict]:
     Returns:
         List of {'content': str, 'metadata': {'source': str, 'type': str}}
     """
-    # TODO: Iterate qua STANDARDIZED_DIR, đọc .md files
-    # documents = []
-    # for md_file in STANDARDIZED_DIR.rglob("*.md"):
-    #     content = md_file.read_text(encoding="utf-8")
-    #     doc_type = "legal" if "legal" in str(md_file) else "news"
-    #     documents.append({
-    #         "content": content,
-    #         "metadata": {"source": md_file.name, "type": doc_type}
-    #     })
-    # return documents
-    raise NotImplementedError("Implement load_documents")
+    documents = []
+    for md_file in sorted(STANDARDIZED_DIR.rglob("*.md")):
+        content = md_file.read_text(encoding="utf-8")
+        if not content.strip():
+            continue
+        doc_type = "legal" if "legal" in md_file.parts else "news"
+        documents.append({
+            "content": content,
+            "metadata": {"source": md_file.name, "type": doc_type},
+        })
+    return documents
+
+
+def _split_oversized(text: str) -> list[str]:
+    """Cắt tiếp 1 đoạn văn bản quá dài thành các phần <= CHUNK_SIZE."""
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
+        separators=["\n\n", "\n", ". ", " ", ""],
+    )
+    return splitter.split_text(text)
+
+
+def _chunk_semantic(content: str) -> list[str]:
+    """
+    Tách văn bản theo ranh giới ngữ nghĩa bằng SemanticChunker (BGE-M3),
+    sau đó "chốt chặn" kích thước: đoạn nào > CHUNK_SIZE sẽ được cắt tiếp
+    bằng RecursiveCharacterTextSplitter (giữ overlap để không mất ngữ cảnh).
+    """
+    from langchain_experimental.text_splitter import SemanticChunker
+
+    splitter = SemanticChunker(
+        FastBreakpointEmbeddings(),
+        breakpoint_threshold_type="percentile",
+        breakpoint_threshold_amount=90,
+    )
+    semantic_splits = splitter.split_text(content)
+
+    final_splits = []
+    for split in semantic_splits:
+        if len(split) <= CHUNK_SIZE:
+            final_splits.append(split)
+        else:
+            final_splits.extend(_split_oversized(split))
+    return final_splits
+
+
+def _chunk_recursive(content: str) -> list[str]:
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
+        separators=["\n\n", "\n", ". ", " ", ""],
+    )
+    return splitter.split_text(content)
+
+
+def _chunk_markdown_header(content: str) -> list[str]:
+    from langchain_text_splitters import MarkdownHeaderTextSplitter
+
+    headers_to_split_on = [("#", "h1"), ("##", "h2"), ("###", "h3")]
+    splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
+    docs = splitter.split_text(content)
+
+    final_splits = []
+    for doc in docs:
+        text = doc.page_content
+        if len(text) <= CHUNK_SIZE:
+            final_splits.append(text)
+        else:
+            final_splits.extend(_split_oversized(text))
+    return final_splits
+
+
+_CHUNKERS = {
+    "semantic": _chunk_semantic,
+    "recursive": _chunk_recursive,
+    "markdown_header": _chunk_markdown_header,
+}
 
 
 def chunk_documents(documents: list[dict]) -> list[dict]:
     """
-    Chunk documents theo strategy đã chọn.
+    Chunk documents theo strategy đã chọn (CHUNKING_METHOD).
 
     Returns:
         List of {'content': str, 'metadata': dict} — mỗi item là 1 chunk
     """
-    # TODO: Implement chunking
-    #
-    # Ví dụ với RecursiveCharacterTextSplitter:
-    # from langchain_text_splitters import RecursiveCharacterTextSplitter
-    #
-    # splitter = RecursiveCharacterTextSplitter(
-    #     chunk_size=CHUNK_SIZE,
-    #     chunk_overlap=CHUNK_OVERLAP,
-    #     separators=["\n\n", "\n", ". ", " ", ""]
-    # )
-    # chunks = []
-    # for doc in documents:
-    #     splits = splitter.split_text(doc["content"])
-    #     for i, chunk_text in enumerate(splits):
-    #         chunks.append({
-    #             "content": chunk_text,
-    #             "metadata": {**doc["metadata"], "chunk_index": i}
-    #         })
-    # return chunks
-    raise NotImplementedError("Implement chunk_documents")
+    chunk_fn = _CHUNKERS[CHUNKING_METHOD]
+
+    chunks = []
+    for doc in documents:
+        splits = chunk_fn(doc["content"])
+        for i, chunk_text in enumerate(splits):
+            stripped = chunk_text.strip()
+            if not stripped:
+                continue
+            chunks.append({
+                "content": stripped,
+                "metadata": {**doc["metadata"], "chunk_index": i},
+            })
+    return chunks
 
 
 def embed_chunks(chunks: list[dict]) -> list[dict]:
     """
-    Embed toàn bộ chunks bằng model đã chọn.
+    Embed toàn bộ chunks bằng BAAI/bge-m3.
 
     Returns:
         Mỗi chunk dict được thêm key 'embedding': list[float]
     """
-    # TODO: Implement embedding
-    #
-    # Ví dụ với sentence-transformers:
-    # from sentence_transformers import SentenceTransformer
-    #
-    # model = SentenceTransformer(EMBEDDING_MODEL)
-    # texts = [c["content"] for c in chunks]
-    # embeddings = model.encode(texts, show_progress_bar=True)
-    # for chunk, emb in zip(chunks, embeddings):
-    #     chunk["embedding"] = emb.tolist()
-    # return chunks
-    raise NotImplementedError("Implement embed_chunks")
+    if not chunks:
+        return chunks
+
+    texts = [c["content"] for c in chunks]
+    vectors = embed_texts(texts)
+    for chunk, vector in zip(chunks, vectors):
+        chunk["embedding"] = vector
+    return chunks
 
 
 def index_to_vectorstore(chunks: list[dict]):
     """
-    Lưu chunks vào vector store đã chọn.
+    Lưu chunks (đã có 'embedding') vào Weaviate.
+
+    Tạo (hoặc tái sử dụng) collection `DrugLawDocs` với
+    `Configure.Vectorizer.none()` vì vector đã được tính sẵn ở bước
+    `embed_chunks` (BAAI/bge-m3) — Weaviate chỉ lưu trữ & lập index ANN.
     """
-    # TODO: Implement indexing
-    #
-    # Ví dụ với Weaviate:
-    # import weaviate
-    # from weaviate.classes.config import Configure, Property, DataType
-    #
-    # client = weaviate.connect_to_local()  # hoặc connect_to_weaviate_cloud()
-    #
-    # # Tạo collection
-    # collection = client.collections.create(
-    #     name="DrugLawDocs",
-    #     vectorizer_config=Configure.Vectorizer.none(),
-    #     properties=[
-    #         Property(name="content", data_type=DataType.TEXT),
-    #         Property(name="source", data_type=DataType.TEXT),
-    #         Property(name="doc_type", data_type=DataType.TEXT),
-    #     ]
-    # )
-    #
-    # # Insert chunks
-    # with collection.batch.dynamic() as batch:
-    #     for chunk in chunks:
-    #         batch.add_object(
-    #             properties={"content": chunk["content"], ...},
-    #             vector=chunk["embedding"]
-    #         )
-    raise NotImplementedError("Implement index_to_vectorstore")
+    import weaviate
+    from weaviate.classes.config import Configure, DataType, Property
+
+    client = weaviate.connect_to_local()
+    try:
+        if not client.collections.exists(WEAVIATE_COLLECTION):
+            client.collections.create(
+                name=WEAVIATE_COLLECTION,
+                vectorizer_config=Configure.Vectorizer.none(),
+                properties=[
+                    Property(name="content", data_type=DataType.TEXT),
+                    Property(name="source", data_type=DataType.TEXT),
+                    Property(name="doc_type", data_type=DataType.TEXT),
+                    Property(name="chunk_index", data_type=DataType.INT),
+                ],
+            )
+
+        collection = client.collections.get(WEAVIATE_COLLECTION)
+        with collection.batch.dynamic() as batch:
+            for chunk in chunks:
+                metadata = chunk.get("metadata", {})
+                batch.add_object(
+                    properties={
+                        "content": chunk["content"],
+                        "source": metadata.get("source", ""),
+                        "doc_type": metadata.get("type", ""),
+                        "chunk_index": metadata.get("chunk_index", 0),
+                    },
+                    vector=chunk["embedding"],
+                )
+    finally:
+        client.close()
 
 
 def run_pipeline():
